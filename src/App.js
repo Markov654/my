@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import logo from "./logo.svg"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Row>
+        <Col md={6}>
+          {<div><h1> This is bootstrap</h1>
+           <img src={logo} ></img>
+          </div>}
+          
+        </Col>
+        <Col md={6}>
+          {
+              <div><h2>This is start</h2>
+                   <div> this is my furst div </div>
+                   <img src={logo} ></img>
+                   <p className="App">mila ima hubavo dupe</p>
+              </div>}
+          
+  
+        </Col>
+       
+      </Row>
+    </Container>
+
+    
   );
 }
 
